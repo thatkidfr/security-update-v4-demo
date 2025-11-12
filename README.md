@@ -2,4 +2,4 @@
 Gonna be pretty sick tbh\
 No need to obfuscate the code too\
 Last update???\
-no tampering prevention :/\
+no tampering prevention :/
