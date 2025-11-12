@@ -30,12 +30,17 @@ function generateUUIDv4() {
   );
 }
 
-uuid = prompt("UUID", generateUUIDv4());
+uuidDefault = generateUUIDv4();
+uuid = prompt("UUID", uuidDefault);
 hmacSHA256(uuid, 'SECRET').then(result => {
-  localStorage.setItem("verify", result);
-});
-alert(uuid);
 
+  if (uuid === uuidDefault){
+    localStorage.setItem("verify", result);
+  }
+  else {
+    alert(result);
+  }
+});
 
 // NOTES
 // Replace "SECRET" with a secret key that is impossible to guess
